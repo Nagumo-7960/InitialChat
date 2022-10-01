@@ -39,7 +39,7 @@
                     <div class="bms_message bms_left">
                         <div class="bms_message_box">
                             <div class="bms_message_content">
-                                <div class="bms_message_text">ほうほうこりゃー便利じゃないか</div>
+                                <div class="bms_message_text">こんにちは</div>
                             </div>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
                     <div class="bms_message bms_right">
                         <div class="bms_message_box">
                             <div class="bms_message_content">
-                                <div class="bms_message_text">うん、まあまあいけとるな</div>
+                                <div class="bms_message_text" v-html="message"></div>
                             </div>
                         </div>
                     </div>
@@ -60,7 +60,6 @@
                 <div id="bms_send">
                     <textarea id="bms_send_message" v-model="lines"></textarea>
                     <div id="bms_send_btn">送信</div>
-                    <div v-html="message"></div>
                 </div>
             </div>
         </div>

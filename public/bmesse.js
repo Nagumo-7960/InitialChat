@@ -1,7 +1,7 @@
 Vue.createApp({
   data: function() {
     return {
-      lines: 'Hello Vue.js!'
+      lines: ''
     }
   },
   computed: {
