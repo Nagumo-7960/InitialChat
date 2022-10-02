@@ -1,4 +1,4 @@
-Vue.createApp({
+const app = Vue.createApp({
   data: function() {
     return {
       lines: ''
@@ -9,4 +9,6 @@ Vue.createApp({
       return this.lines.replace(/\n/g, '<br>');
     }
   }
-}).mount('#app')
+})
+
+const vm = app.mount("#app")
