@@ -1,14 +1,21 @@
-const app = Vue.createApp({
-  data() {
-    return {
-      lines: ''
-    }
-  },
-  computed: {
-    message: function() {
-      return this.lines.replace(/\n/g, '<br>');
-    }
-  }
-})
+import React, { Component } from 'react';
 
-const vm = app.mount("#app")
+class Greeting extends Component {
+  render() {
+    return(
+      <div>
+        <h1>Hello, world.</h1>
+        <h2>Hi, everyone.</h2>
+      </div>
+    );
+  }
+}
+
+// ここ！！
+ReactDOM.render(
+  <React.Fragment>
+    <Greeting />
+    <Greeting />
+  </React.Fragment>,
+  document.getElementById('app')
+);
